@@ -179,7 +179,7 @@
 <hr/>
 <h3>The following data is from the "Notices_Daily_Tracker" reports</h3>
 
-    <h4 align="center">Total Notices Received, Triggered and Printed by Template ID</h4>
+    <h4 align="center">Total Notices Received, Triggered and Printed</h4>
     <%= column_chart [ 
 	{ name: "Triggered", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:notices_triggered) },
 	{ name: "Picked Up", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:esb_pickedup_count) },

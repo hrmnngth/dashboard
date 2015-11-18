@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  notice_template_name: MyString
+  notice_template_id: MyString
+  notices_triggered: 1
+  esb_pickedup_count: 1
+  esb_print_count: 1
+
+two:
+  notice_template_name: MyString
+  notice_template_id: MyString
+  notices_triggered: 1
+  esb_pickedup_count: 1
+  esb_print_count: 1

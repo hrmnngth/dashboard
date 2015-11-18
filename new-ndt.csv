@@ -1,0 +1,28 @@
+notice_template_name,notice_template_id,notices_triggered,esb_pickedup_count,esb_print_count
+1A - CUR_Medicaid Eligibility,CNMEEN01A,83,83,83
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,71,71,71
+10 - CUR_Total Ineligibility,CNIEEN10,31,31,29
+102 - CUR_Confirmation of Receipt Notice_SPA,CNMRSP102,17,17,17
+2 - CUR_Request for Information,CNMEEN02,14,14,14
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,14,14,14
+SR8 - CUR_SEP Denial,CNLEENSR8,11,11,11
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,10,10,10
+1A - CUR_Medicaid Eligibility,CNMESP01A,8,8,8
+10 - CUR_Total Ineligibility,CNIESP10,6,6,6
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,6,6,6
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,5,5,5
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,3,3,3
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,3,3,3
+19 - CUR_Request For Social Security Number,CNRSEN19,3,3,3
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDREN31,2,2,2
+1E2 - CUR_Foster Care New Medicaid Eligibility Notice,CNMEEN01E2,2,2,2
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDRSP31,2,2,2
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,2,2,2
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,2,2,2
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRAMSR4,2,2,2
+30 - CUR_Medicaid Card Replacement Confirmation,CNMCEN30,1,1,1
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,1,1,1
+SR4 - CUR_DCHL Confirmation of Receipt Notice_SPA,CNMRSPSR4,1,1,1
+SR7 - CUR_SEP Approval,CNLEENSR7,1,1,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDSP15B1,1,1,1
+1A - CUR_Medicaid Eligibility,CNMEAM01A,1,1,1
