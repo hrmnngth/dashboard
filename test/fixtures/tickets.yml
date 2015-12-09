@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  critical: 1
+  critical_age: 1.5
+  high: 1
+  high_age: 1.5
+  medium: 1
+  medium_age: 1.5
+  low: 1
+  low_age: 1.5
+
+two:
+  type: 
+  critical: 1
+  critical_age: 1.5
+  high: 1
+  high_age: 1.5
+  medium: 1
+  medium_age: 1.5
+  low: 1
+  low_age: 1.5

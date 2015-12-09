@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  interval: 2015-11-13 13:17:13
+  avg_wait_time: 2015-11-13 13:17:13
+  max_wait_time: 2015-11-13 13:17:13
+  avg_handle_time: 2015-11-13 13:17:13
+  calls_received: 1
+  calls_answered: 1
+  return_no_answer: 1
+  abandoned_calls: 1
+  pct_abandons: 1.5
+
+two:
+  interval: 2015-11-13 13:17:13
+  avg_wait_time: 2015-11-13 13:17:13
+  max_wait_time: 2015-11-13 13:17:13
+  avg_handle_time: 2015-11-13 13:17:13
+  calls_received: 1
+  calls_answered: 1
+  return_no_answer: 1
+  abandoned_calls: 1
+  pct_abandons: 1.5

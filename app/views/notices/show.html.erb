@@ -1,0 +1,21 @@
+<div class="row">
+
+  <!-- Line Chart - Single Series -->
+<!--
+   The below SQL get's executed behind the scenes
+   (1.6ms)  SELECT SUM("notices"."count") AS sum_count, template_id AS template_id FROM "notices" GROUP BY "notices"."template_id"
+   (0.5ms)  SELECT COUNT(*) AS count_all, communication_type AS communication_type FROM "notices" GROUP BY "notices"."communication_type"
+-->
+  <div class="col-xs-6">
+    <h3>Notice Counts By Template Id</h3>
+    <%= column_chart @notices.group(:template_id).sum(:count) %>
+    <h3>Notice Counts By Communcation Type</h3>
+    <%= pie_chart @notices.group(:communication_type).count  %>
+  </div>
+
+</div>
+
+
+
+
+

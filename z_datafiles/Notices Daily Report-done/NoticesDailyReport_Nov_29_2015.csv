@@ -1,0 +1,26 @@
+NOTICE_TEMPLATE_NAME,NOTICE_TEMLATEID,NOTICE_COMMUNICATION,NOTICESCOUNT 
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,96
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Both,31
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Print,23
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Both,10
+2 - CUR_Request for Information,CNMEEN02,Both,8
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Print,8
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Both,7
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Email,5
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Email,3
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Both,3
+1A - CUR_Medicaid Eligibility,CNMESP01A,Print,3
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Email,2
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Print,2
+2 - CUR_Request for Information,CNMEEN02,Email,2
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Email,2
+1E2 - CUR_Foster Care New Medicaid Eligibility Notice,CNMEEN01E2,Email,2
+1A - CUR_Medicaid Eligibility,CNMESP01A,Both,1
+37B1 - CUR_VoluntaryTermination (No New Plan),CNPCEN37B1,Email,1
+19 - CUR_Request For Social Security Number_SPA,CNRSSP19,Print,1
+2 - CUR_Request for Information,CNMEEN02,Print,1
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Both,1
+21 - CUR_Third Documentation Reminder Notice,CNRNSP21,Print,1
+20B - CUR_Second  Documenation Reminder Notice,CNRNSP20B,Print,1
+37B1 - CUR_VoluntaryTermination (No New Plan),CNPCEN37B1,Both,1
+19 - CUR_Request For Social Security Number,CNRSEN19,Print,1

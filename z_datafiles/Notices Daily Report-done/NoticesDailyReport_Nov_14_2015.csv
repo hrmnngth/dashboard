@@ -1,0 +1,33 @@
+NOTICE_TEMPLATE_NAME,NOTICE_TEMLATEID,NOTICE_COMMUNICATION,NOTICESCOUNT 
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,95
+2 - CUR_Request for Information,CNMEEN02,Print,23
+2 - CUR_Request for Information,CNMEEN02,Both,22
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Print,19
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Print,15
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Print,13
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Both,12
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Both,10
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Print,10
+2 - CUR_Request for Information,CNMEEN02,Email,10
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Email,8
+1A - CUR_Medicaid Eligibility,CNMESP01A,Print,8
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Email,7
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Both,7
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Email,5
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Both,4
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Both,4
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDSP15A,Print,3
+10 - CUR_Total Ineligibility,CNIEEN10,Print,3
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,Print,3
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Both,2
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Email,2
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Print,2
+SR4 - CUR_DCHL Confirmation of Receipt Notice_SPA,CNMRSPSR4,Print,2
+SR8 - CUR_SEP Denial,CNLEENSR8,Both,2
+20A - CUR_First Documenation Reminder Notice,CNRNSP20A,Both,1
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Email,1
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Email,1
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDREN31,Both,1
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Email,1
+SR8 - CUR_SEP Denial,CNLEENSR8,Print,1
+20A - CUR_First Documenation Reminder Notice,CNRNSP20A,Print,1

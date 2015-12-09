@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_type: MyString
+  creation_date_time: 2015-11-11 13:55:37
+  creation_date: 2015-11-11 13:55:37
+  month_dt: 2015-11-11 13:55:37
+  day: 9.99
+  month: 9.99
+  year: 9.99
+  real_date: 2015-11-11 13:55:37
+  date_value: 2015-11-11 13:55:37
+  weekday: MyString
+  creation_window: 2015-11-11 13:55:37
+  hour: 9.99
+  hour_value: 9.99
+  hour_string: MyString
+
+two:
+  user_type: MyString
+  creation_date_time: 2015-11-11 13:55:37
+  creation_date: 2015-11-11 13:55:37
+  month_dt: 2015-11-11 13:55:37
+  day: 9.99
+  month: 9.99
+  year: 9.99
+  real_date: 2015-11-11 13:55:37
+  date_value: 2015-11-11 13:55:37
+  weekday: MyString
+  creation_window: 2015-11-11 13:55:37
+  hour: 9.99
+  hour_value: 9.99
+  hour_string: MyString

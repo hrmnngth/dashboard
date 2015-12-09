@@ -1,0 +1,120 @@
+<planBenefitTemplateVO xmlns="http://vo.ffe.cms.hhs.gov">
+  <packagesList>
+    <packages>
+      <header>
+        <templateVersion>4.0</templateVersion>
+        <issuerId cellLocation="Benefits_Package_1-B.2">
+          <cellValue>81334</cellValue>
+        </issuerId>
+        <statePostalCode cellLocation="Benefits_Package_1-B.3">
+          <cellValue>DC</cellValue>
+        </statePostalCode>
+        <marketCoverage cellLocation="Benefits_Package_1-B.4">
+          <cellValue>Individual</cellValue>
+        </marketCoverage>
+        <dentalPlanOnlyInd cellLocation="Benefits_Package_1-B.5">
+          <cellValue>Yes</cellValue>
+        </dentalPlanOnlyInd>
+        <tin cellLocation="Benefits_Package_1-B.6">
+          <cellValue>94-2761537</cellValue>
+        </tin>
+      </header>
+      <benefitsList>
+        <benefits>
+          <benefitTypeCode cellLocation="Benefits_Package_1-A.68">
+            <cellValue>Routine Dental Services (Adult)</cellValue>
+          </benefitTypeCode>
+          <isEHB cellLocation="Benefits_Package_1-C.68">
+            <cellValue></cellValue>
+          </isEHB>
+          <isStateMandate cellLocation="Benefits_Package_1-D.68">
+            <cellValue></cellValue>
+          </isStateMandate>
+          <isBenefitCovered cellLocation="Benefits_Package_1-E.68">
+            <cellValue></cellValue>
+          </isBenefitCovered>
+          <serviceLimit cellLocation="Benefits_Package_1-F.68">
+            <cellValue></cellValue>
+          </serviceLimit>
+          <quantityLimit cellLocation="Benefits_Package_1-G.68">
+            <cellValue></cellValue>
+          </quantityLimit>
+          <unitLimit cellLocation="Benefits_Package_1-H.68">
+            <cellValue></cellValue>
+          </unitLimit>
+          <minimumStay cellLocation="Benefits_Package_1-I.68">
+            <cellValue></cellValue>
+          </minimumStay>
+          <exclusion cellLocation="Benefits_Package_1-J.68">
+            <cellValue></cellValue>
+          </exclusion>
+          <explanation cellLocation="Benefits_Package_1-K.68">
+            <cellValue></cellValue>
+          </explanation>
+          <ehbVarianceReason cellLocation="Benefits_Package_1-L.68">
+            <cellValue></cellValue>
+          </ehbVarianceReason>
+          <subjectToDeductibleTier1 cellLocation="Benefits_Package_1-M.68">
+            <cellValue></cellValue>
+          </subjectToDeductibleTier1>
+          <subjectToDeductibleTier2 cellLocation="Benefits_Package_1-N.68">
+            <cellValue></cellValue>
+          </subjectToDeductibleTier2>
+          <excludedInNetworkMOOP cellLocation="Benefits_Package_1-O.68">
+            <cellValue></cellValue>
+          </excludedInNetworkMOOP>
+          <excludedOutOfNetworkMOOP cellLocation="Benefits_Package_1-P.68">
+            <cellValue></cellValue>
+          </excludedOutOfNetworkMOOP>
+        </benefits>
+        <benefits>
+          <benefitTypeCode cellLocation="Benefits_Package_1-A.104">
+            <cellValue>Dental Check-Up for Children</cellValue>
+          </benefitTypeCode>
+          <isEHB cellLocation="Benefits_Package_1-C.104">
+            <cellValue></cellValue>
+          </isEHB>
+          <isStateMandate cellLocation="Benefits_Package_1-D.104">
+            <cellValue></cellValue>
+          </isStateMandate>
+          <isBenefitCovered cellLocation="Benefits_Package_1-E.104">
+            <cellValue>Covered</cellValue>
+          </isBenefitCovered>
+          <serviceLimit cellLocation="Benefits_Package_1-F.104">
+            <cellValue>Yes</cellValue>
+          </serviceLimit>
+          <quantityLimit cellLocation="Benefits_Package_1-G.104">
+            <cellValue>1</cellValue>
+          </quantityLimit>
+          <unitLimit cellLocation="Benefits_Package_1-H.104">
+            <cellValue>Visit(s) per 6 Months</cellValue>
+          </unitLimit>
+          <minimumStay cellLocation="Benefits_Package_1-I.104">
+            <cellValue></cellValue>
+          </minimumStay>
+          <exclusion cellLocation="Benefits_Package_1-J.104">
+            <cellValue></cellValue>
+          </exclusion>
+          <explanation cellLocation="Benefits_Package_1-K.104">
+            <cellValue></cellValue>
+          </explanation>
+          <ehbVarianceReason cellLocation="Benefits_Package_1-L.104">
+            <cellValue>Above EHB</cellValue>
+          </ehbVarianceReason>
+          <subjectToDeductibleTier1 cellLocation="Benefits_Package_1-M.104">
+            <cellValue>Yes</cellValue>
+          </subjectToDeductibleTier1>
+          <subjectToDeductibleTier2 cellLocation="Benefits_Package_1-N.104">
+            <cellValue>No</cellValue>
+          </subjectToDeductibleTier2>
+          <excludedInNetworkMOOP cellLocation="Benefits_Package_1-O.104">
+            <cellValue>No</cellValue>
+          </excludedInNetworkMOOP>
+          <excludedOutOfNetworkMOOP cellLocation="Benefits_Package_1-P.104">
+            <cellValue>Yes</cellValue>
+          </excludedOutOfNetworkMOOP>
+        </benefits>
+      </benefitsList>
+    </packages>
+  </packagesList>
+</planBenefitTemplateVO>

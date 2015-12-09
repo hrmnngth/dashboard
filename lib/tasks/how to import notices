@@ -1,0 +1,16 @@
+create a cron job to run that takes the notices file and renames it to something constant for ruby: 
+	mv NoticesDaily* new-notices.csv
+create a cron job to sed the columns of the file (keep the columns constant): 
+	sed -e 'notices.sed' new-notices.csv > new-notices.tmp && mv new-notices.tmp new-notices.csv
+
+sed script should be: notices.sed:
+	s/NOTICE_TEMPLATE_NAME/template_name/
+	s/NOTICE_TEMLATEID/template_id/
+	s/NOTICE_COMMUNICATION/communication_type/
+	s/NOTICESCOUNT/count
+
+create a cron job to append the notices into the database -- the update time is the date:
+
+	rake import_new_notices_csv:create_notices
+
+

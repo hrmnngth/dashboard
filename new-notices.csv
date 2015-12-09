@@ -1,0 +1,17 @@
+template_name,template_id,communication_type,count
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,Print,23
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Print,18
+102 - CUR_Confirmation of Receipt Notice_SPA,CNMRSP102,Print,10
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Both,9
+10 - CUR_Total Ineligibility,CNIEEN10,Print,6
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Both,5
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Print,5
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Email,4
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDSP15A,Print,4
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDREN31,Both,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Both,1
+1A - CUR_Medicaid Eligibility,CNMESP01A,Print,1
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,1
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Email,1
+10 - CUR_Total Ineligibility,CNIESP10,Print,1
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDSP15A,Both,1

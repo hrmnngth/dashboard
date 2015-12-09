@@ -1,0 +1,55 @@
+template_name,template_id,communication_type,count
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,107
+2 - CUR_Request for Information,CNMEEN02,Print,31
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Both,25
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Print,20
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Both,20
+2 - CUR_Request for Information,CNMEEN02,Both,20
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Print,20
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Print,16
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Both,15
+1A - CUR_Medicaid Eligibility,CNMESP01A,Print,14
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Print,13
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Print,12
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Email,8
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Both,8
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Both,8
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Email,8
+2 - CUR_Request for Information,CNMEEN02,Email,7
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Both,7
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Email,6
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Email,6
+SR7 - CUR_SEP Approval,CNLEENSR7,Email,6
+SR7 - CUR_SEP Approval,CNLEENSR7,Both,6
+10 - CUR_Total Ineligibility,CNIEEN10,Print,4
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Email,3
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Print,3
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Email,3
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,Print,3
+37B1 - CUR_VoluntaryTermination (No New Plan),CNPCEN37B1,Both,2
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDSP15A,Print,2
+10 - CUR_Total Ineligibility,CNIESP10,Print,2
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Print,2
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDREN31,Email,2
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Email,1
+1A - CUR_Medicaid Eligibility,CNMESP01A,Both,1
+37B1 - CUR_VoluntaryTermination (No New Plan),CNPCEN37B1,Email,1
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Email,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Both,1
+7D - CUR_ Unassisted  Exchange+Mediciad,CNMFEN07D,Print,1
+22 - CUR_Fourth Documentation Reminder Notice,CNRNSP22,Both,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDSP15B1,Print,1
+22 - CUR_Fourth Documentation Reminder Notice,CNRNSP22,Print,1
+21 - CUR_Third Documentation Reminder Notice,CNRNSP21,Print,1
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Both,1
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Email,1
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Email,1
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Both,1
+6A - CUR_Mixed Coverage Family Temporary APTC_CSR,CNMFEN06A,Both,1
+1A - CUR_Medicaid Eligibility,CNMEAM01A,Print,1
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,Print,1
+3A - CUR_Exchange+APTC Eligibility,CNIEEN03A,Print,1
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Print,1
+20A - CUR_First Documenation Reminder Notice,CNRNSP20A,Both,1
+19 - CUR_Request For Social Security Number,CNRSEN19,Print,1
+5A - CUR_Mixed Coverage Family,CNMFEN05A,Print,1

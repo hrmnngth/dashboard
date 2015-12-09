@@ -1,0 +1,35 @@
+NOTICE_TEMPLATE_NAME,NOTICE_TEMLATEID,NOTICE_COMMUNICATION,NOTICESCOUNT 
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,Print,62
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,31
+102 - CUR_Confirmation of Receipt Notice_SPA,CNMRSP102,Print,19
+2 - CUR_Request for Information,CNMEEN02,Both,11
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Print,9
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Email,9
+2 - CUR_Request for Information,CNMEEN02,Email,8
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Print,6
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Both,6
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Both,6
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Print,6
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Both,6
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Email,5
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Print,5
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Email,5
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Print,5
+10 - CUR_Total Ineligibility,CNIEEN10,Print,4
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Email,4
+30 - CUR_Medicaid Card Replacement Confirmation,CNMCEN30,Print,3
+37B1 - CUR_VoluntaryTermination (No New Plan),CNPCEN37B1,Email,3
+2 - CUR_Request for Information,CNMEEN02,Print,3
+19 - CUR_Request For Social Security Number,CNRSEN19,Print,2
+1E2 - CUR_Foster Care New Medicaid Eligibility Notice,CNMEEN01E2,Both,2
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Both,2
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Both,2
+1A - CUR_Medicaid Eligibility,CNMESP01A,Print,2
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Email,2
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Email,1
+20B - CUR_Second  Documenation Reminder Notice,CNRNAM20B,Both,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDAM15B1,Both,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Both,1
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Both,1
+10 - CUR_Total Ineligibility,CNIESP10,Print,1
+22 - CUR_Fourth Documentation Reminder Notice,CNRNSP22,Print,1

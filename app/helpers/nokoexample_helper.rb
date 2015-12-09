@@ -1,0 +1,2 @@
+module NokoexampleHelper
+end

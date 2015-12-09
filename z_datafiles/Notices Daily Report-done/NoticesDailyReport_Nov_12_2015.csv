@@ -1,0 +1,33 @@
+NOTICE_TEMPLATE_NAME,NOTICE_TEMLATEID,NOTICE_COMMUNICATION,NOTICESCOUNT 
+10 - CUR_Total Ineligibility,CNIEEN10,Print,32
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,Print,29
+2 - CUR_Request for Information,CNMEEN02,Print,15
+2 - CUR_Request for Information,CNMEEN02,Both,14
+SR8 - CUR_SEP Denial,CNLEENSR8,Both,10
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Print,10
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Both,9
+2 - CUR_Request for Information,CNMEEN02,Email,9
+10 - CUR_Total Ineligibility,CNIESP10,Print,8
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Email,8
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Print,7
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,Print,6
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,5
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Email,5
+102 - CUR_Confirmation of Receipt Notice_SPA,CNMRSP102,Print,5
+SR8 - CUR_SEP Denial,CNLEENSR8,Email,4
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Both,4
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Print,4
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Both,3
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Email,3
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Both,2
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Print,2
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Both,2
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Email,1
+7A - CUR_Mixed Coverage Family Eligibility,CNMFEN07A,Both,1
+20A - CUR_First Documenation Reminder Notice,CNRNSP20A,Print,1
+SR8 - CUR_SEP Denial,CNLEENSR8,Print,1
+1A - CUR_Medicaid Eligibility,CNMESP01A,Print,1
+20B - CUR_Second  Documenation Reminder Notice,CNRNAM20B,Print,1
+3A - CUR_Exchange+APTC Eligibility,CNIEEN03A,Both,1
+9A - CUR_Individual Non IAP Eligibility,CNIEEN09A,Both,1
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Email,1

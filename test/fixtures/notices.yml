@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  template_name: MyString
+  template_id: MyString
+  communication_type: MyString
+  count: 1
+
+two:
+  template_name: MyString
+  template_id: MyString
+  communication_type: MyString
+  count: 1

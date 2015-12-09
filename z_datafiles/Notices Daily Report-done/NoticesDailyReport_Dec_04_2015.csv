@@ -1,0 +1,66 @@
+NOTICE_TEMPLATE_NAME,NOTICE_TEMLATEID,NOTICE_COMMUNICATION,NOTICESCOUNT 
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,147
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Both,42
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Print,32
+2 - CUR_Request for Information,CNMEEN02,Print,32
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Print,31
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,Print,24
+2 - CUR_Request for Information,CNMEEN02,Both,21
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Print,19
+1A - CUR_Medicaid Eligibility,CNMESP01A,Print,19
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Both,18
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Both,17
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Both,14
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Both,13
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Print,12
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Email,12
+2 - CUR_Request for Information,CNMEEN02,Email,11
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Both,8
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Email,8
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Email,7
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,Print,7
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Print,7
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Both,6
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Email,5
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Both,4
+IVLR 6A - CUR_Individual Renewal Notice,CNIREN06A,Print,4
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Print,4
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDREN31,Both,4
+10 - CUR_Total Ineligibility,CNIEEN10,Print,3
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Email,3
+IVLR 6A - CUR_Individual Renewal Notice,CNIREN06A,Both,3
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Print,3
+1A - CUR_Medicaid Eligibility,CNMESP01A,Both,3
+9A - CUR_Individual Non IAP Eligibility,CNIESP09A,Both,3
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDSP15A,Both,2
+1G - CUR_Medicaid and Temp Medicaid Eligibility,CNMEEN01G,Print,2
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Print,2
+2 - CUR_Request for Information,CNMEAM02,Print,2
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDEN15A,Email,2
+20A - CUR_First Documenation Reminder Notice,CNRNSP20A,Print,2
+3A - CUR_Exchange+APTC Eligibility,CNIEEN03A,Both,2
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Email,2
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,Both,2
+15A - CUR_Re-determination Based on Self-Reported Information,CNRDAM15A,Both,1
+1F - CUR_Medicaid and Temp Medicaid Eligibility,CNMEEN01F,Print,1
+SR4 - CUR_DCHL Confirmation of Receipt Notice_SPA,CNMRSPSR4,Both,1
+19 - CUR_Request For Social Security Number,CNRSEN19,Email,1
+1B - CUR_Temporary Medicaid,CNMEEN01B,Both,1
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDREN31,Print,1
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRENSR4,Email,1
+1A - CUR_Medicaid Eligibility,CNMEAM01A,Print,1
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,Email,1
+4A - CUR_Individual Temporary Eligibility,CNIESP04A,Print,1
+1B - CUR_Temporary Medicaid,CNMEEN01B,Print,1
+102 - CUR_Confirmation of Receipt Notice_SPA,CNMRSP102,Print,1
+SR4 - CUR_DCHL Confirmation of Receipt Notice,CNMRAMSR4,Both,1
+1A - CUR_Medicaid Eligibility,CNMEAM01A,Both,1
+3A - CUR_Exchange+APTC Eligibility,CNIEEN03A,Email,1
+IVLR 6B - CUR_Conditional Individual Renewal Notice,CNIREN06B,Both,1
+7A - CUR_Mixed Coverage Family Eligibility,CNMFEN07A,Both,1
+IVLR 6A - CUR_Individual Renewal Notice,CNIREN06A,Email,1
+IVLR 7B - CUR_Conditional Individual Renewal Notice,CNIREN07B,Print,1
+31 - CUR_Confirmation of Documents Received-No Further Documents Needed,CNDREN31,Email,1
+1G - CUR_Medicaid and Temp Medicaid Eligibility,CNMEEN01G,Both,1
+10 - CUR_Total Ineligibility,CNIEAM10,Print,1
+31A - CUR_Confirmation of Documents Received-Additional Documents Still Needed,CNDREN31A,Both,1
