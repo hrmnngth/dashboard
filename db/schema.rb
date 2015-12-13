@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151209163918) do
+ActiveRecord::Schema.define(version: 20151213145460) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,19 @@ ActiveRecord::Schema.define(version: 20151209163918) do
     t.datetime "updated_at",        null: false
   end
 
+  create_table "acct_create_times", force: :cascade do |t|
+    t.string   "user_type"
+    t.datetime "creation_date_time"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "acct_creates", force: :cascade do |t|
+    t.string   "user_type"
+    t.string   "creation_date_time"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "accts", force: :cascade do |t|
     t.string   "user_type"
@@ -63,6 +76,16 @@ ActiveRecord::Schema.define(version: 20151209163918) do
     t.integer  "count"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+  end
+
+  create_table "noticestats", force: :cascade do |t|
+    t.string   "notice_template_name"
+    t.string   "notice_template_id"
+    t.integer  "notices_triggered"
+    t.integer  "esb_pickedup_count"
+    t.integer  "esb_print_count"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "stuckapps", force: :cascade do |t|

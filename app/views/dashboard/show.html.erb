@@ -177,6 +177,28 @@
 <p>&nbsp;</p>
 
 <hr/>
+<h3>The following data is from the "Notices_Daily_Tracker" reports</h3>
+
+    <h4 align="center">Total Notices Received, Triggered and Printed by Template ID</h4>
+    <%= column_chart [ 
+	{ name: "Triggered", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:notices_triggered) },
+	{ name: "Picked Up", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:esb_pickedup_count) },
+	{ name: "Printed", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:esb_print_count) } ],
+		library: { curveType: "null"}, 
+		discrete:true, ytitle: "Total Count"
+    %>
+<p>&nbsp;</p>
+    <h4 align="center">Total Notices Received, Triggered and Printed by Day</h4>
+    <%= column_chart [ 
+	{ name: "Triggered", data: @noticestats.group_by_day(:created_at).sum(:notices_triggered) },
+	{ name: "Picked Up", data: @noticestats.group_by_day(:created_at).sum(:esb_pickedup_count) },
+	{ name: "Printed", data: @noticestats.group_by_day(:created_at).sum(:esb_print_count) } ],
+		library: { colors: ["purple", "blue", "green"]}, 
+		discrete:true, ytitle: "Total Count"
+    %>
+
+
+<hr/>
 <h3>Calls</h3>
 
     <h4 align="center">Call Received Past 24 Hours</h4>

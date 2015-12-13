@@ -7,5 +7,6 @@ class DashboardController < ApplicationController
     @stuckapps = Stuckapp.all
     @tickets = Ticket.all
     @acclocks = Acclock.all
+    @noticestats = Noticestat.all
   end
 end
