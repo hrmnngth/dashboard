@@ -3,7 +3,7 @@
     <h4 align="center">Creations By Day</h4>
     <%= 
 	column_chart [ {name: "Acct Creation", data: @accts.group_by_day(:creation_date_time, format: "%m-%d-%Y").count } ], 
-		library: {  curveType: "null"}, 
+		library: {  curveType: "null"}, colors: ["blue"], 
 		discrete:true, ytitle: "Total Count"	 
     %>
 <p>&nbsp;</p>
@@ -15,7 +15,7 @@
 	{name: "broker", data: @accts.where(user_type: "broker").group_by_day(:creation_date_time, format: "%m-%d-%Y").count }, 
 	{name: "employer", data: @accts.where(user_type: "employer").group_by_day(:creation_date_time, format: "%m-%d-%Y").count }, 
 	{name: "employee", data: @accts.where(user_type: "employee").group_by_day(:creation_date_time, format: "%m-%d-%Y").count }  ],
-	library: {hAxis: {title: "Day"}, colors: ["red", "blue", "orange", "green", "purple"]},
+	library: {hAxis: {title: "Day"}, colors: ["blue", "yellow", "orange", "green", "purple"]},
 	stacked:true, discrete:true, ytitle: "Total Count"	 
 
     %>    
@@ -24,7 +24,7 @@
     <h4 align="center">Account Creation by User Type</h4>
 
     <%= 
-	pie_chart @accts.group(:user_type).count, library: { colors: ["red", "blue", "orange", "white", "purple", "green"]}
+	pie_chart @accts.group(:user_type).count, library: { colors: ["blue", "yellow", "orange", "white", "purple", "green"]}
 	
     %>
 
@@ -143,7 +143,7 @@
 
     <h4 align="center">Notice Counts By Template Id</h4>
     <%= column_chart [ { name: "Notices", data: @notices.order(:template_id).group(:template_id).sum(:count) } ],
-		library: { curveType: "null"}, 
+		library: { curveType: "null"}, colors: ["blue"],
 		discrete:true, ytitle: "Total Count"
     %>
 <p>&nbsp;</p>
@@ -154,7 +154,7 @@
 	{ name: "Print", data: @notices.where(communication_type: "Print").group_by_day(:created_at).sum(:count) },
 	{ name: "Email", data: @notices.where(communication_type: "Email").group_by_day(:created_at).sum(:count) },
 	{ name: "Both",  data: @notices.where(communication_type: "Both") .group_by_day(:created_at).sum(:count) } ], 
-	library: { curveType: "null", colors: ["red", "blue", "orange"]}, discrete:true, ytitle: "Total Count"
+	library: { curveType: "null", colors: ["blue", "green", "orange"]}, discrete:true, ytitle: "Total Count"
 
     %>
 
@@ -165,14 +165,14 @@
 	{ name: "Print", data: @notices.where(communication_type: "Print").group_by_day(:created_at).sum(:count) },
 	{ name: "Email", data: @notices.where(communication_type: "Email").group_by_day(:created_at).sum(:count) },
 	{ name: "Both",  data: @notices.where(communication_type: "Both") .group_by_day(:created_at).sum(:count) } ], 
-	library: { curveType: "null", colors: ["red", "blue", "orange"]}, stacked:true, discrete:true, ytitle: "Total Count"
+	library: { curveType: "null", colors: ["blue", "green", "orange"]}, stacked:true, discrete:true, ytitle: "Total Count"
 
     %>
 
 <p>&nbsp;</p>
 
     <h4 align="center">Notice Counts By Communcation Type</h4>
-    <%= pie_chart @notices.group(:communication_type).sum(:count), library: { curveType: "null", colors: ["orange", "red", "blue"]}  %>
+    <%= pie_chart @notices.group(:communication_type).sum(:count), library: { curveType: "null", colors: ["orange", "blue", "green"]}  %>
 
 <p>&nbsp;</p>
 
@@ -184,7 +184,7 @@
 	{ name: "Triggered", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:notices_triggered) },
 	{ name: "Picked Up", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:esb_pickedup_count) },
 	{ name: "Printed", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:esb_print_count) } ],
-		library: { curveType: "null"}, 
+		library: { curveType: "null"}, colors: ["purple", "blue", "green"],
 		discrete:true, ytitle: "Total Count"
     %>
 <p>&nbsp;</p>
@@ -204,7 +204,7 @@
     <h4 align="center">Call Received Past 24 Hours</h4>
     <%=	line_chart [ 
 	{name: "calls", data: @calls.group(:interval).sum(:calls_received) }
-        ], ytitle: "Total Calls"
+        ], library: { colors: ["blue"]}, ytitle: "Total Calls"
     %>
 
 <!-- Commenting out this graph: 
@@ -213,7 +213,7 @@
 	{name: "received", data: @calls.group(	:interval).sum(:calls_received) },
 	{name: "answered", data: @calls.group(:interval).sum(:return_no_answer) },
 	{name: "abandoned", data: @calls.group(:interval).sum(:abandoned_calls) }
-	], ytitle: "Total Calls", stacked: true
+	], library: { colors: ["blue", "green", "orange", "red"]}, ytitle: "Total Calls", stacked: true
     %>
 -->
 
@@ -225,7 +225,7 @@
 	{name: "answered", data: @calls.group(:interval).sum(:calls_answered) },
 	{name: "no-answer", data: @calls.group(:interval).sum(:return_no_answer) },
 	{name: "abandoned", data: @calls.group(:interval).sum(:abandoned_calls) }
-	], ytitle: "Total Calls"
+	], library: { colors: ["blue", "green", "orange", "red"]}, ytitle: "Total Calls"
     %>
 
 <!-- Commenting out this next graph 
@@ -244,7 +244,7 @@
 
     <%= pie_chart({"answered" => @calls.sum(:calls_answered), 
 	           "abandoned" => @calls.sum(:abandoned_calls), 
-		   "no-answer" => @calls.sum(:return_no_answer) })  
+		   "no-answer" => @calls.sum(:return_no_answer) } , library: { colors: ["blue", "orange", "red"]} )
     %>
 
 <p>&nbsp;</p>
