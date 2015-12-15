@@ -295,6 +295,7 @@ ALTER SEQUENCE notices_id_seq OWNED BY notices.id;
 
 
 --
+<<<<<<< HEAD
 -- Name: noticestats; Type: TABLE; Schema: public; Owner: lance; Tablespace: 
 --
 
@@ -334,6 +335,8 @@ ALTER SEQUENCE noticestats_id_seq OWNED BY noticestats.id;
 
 
 --
+=======
+>>>>>>> 1fef4087336eaa88b9866bb94032b905ba934863
 -- Name: schema_migrations; Type: TABLE; Schema: public; Owner: lance; Tablespace: 
 --
 
@@ -516,6 +519,7 @@ ALTER TABLE ONLY notices ALTER COLUMN id SET DEFAULT nextval('notices_id_seq'::r
 -- Name: id; Type: DEFAULT; Schema: public; Owner: lance
 --
 
+<<<<<<< HEAD
 ALTER TABLE ONLY noticestats ALTER COLUMN id SET DEFAULT nextval('noticestats_id_seq'::regclass);
 
 
@@ -523,6 +527,8 @@ ALTER TABLE ONLY noticestats ALTER COLUMN id SET DEFAULT nextval('noticestats_id
 -- Name: id; Type: DEFAULT; Schema: public; Owner: lance
 --
 
+=======
+>>>>>>> 1fef4087336eaa88b9866bb94032b905ba934863
 ALTER TABLE ONLY stuckapps ALTER COLUMN id SET DEFAULT nextval('stuckapps_id_seq'::regclass);
 
 
@@ -6557,6 +6563,7 @@ SELECT pg_catalog.setval('notices_id_seq', 2111, true);
 
 
 --
+<<<<<<< HEAD
 -- Data for Name: noticestats; Type: TABLE DATA; Schema: public; Owner: lance
 --
 
@@ -6671,6 +6678,8 @@ SELECT pg_catalog.setval('noticestats_id_seq', 99, true);
 
 
 --
+=======
+>>>>>>> 1fef4087336eaa88b9866bb94032b905ba934863
 -- Data for Name: schema_migrations; Type: TABLE DATA; Schema: public; Owner: lance
 --
 
@@ -6683,7 +6692,10 @@ COPY schema_migrations (version) FROM stdin;
 20151206053530
 20151208165901
 20151209163918
+<<<<<<< HEAD
 20151213145460
+=======
+>>>>>>> 1fef4087336eaa88b9866bb94032b905ba934863
 \.
 
 
@@ -6839,6 +6851,7 @@ ALTER TABLE ONLY notices
 
 
 --
+<<<<<<< HEAD
 -- Name: noticestats_pkey; Type: CONSTRAINT; Schema: public; Owner: lance; Tablespace: 
 --
 
@@ -6847,6 +6860,8 @@ ALTER TABLE ONLY noticestats
 
 
 --
+=======
+>>>>>>> 1fef4087336eaa88b9866bb94032b905ba934863
 -- Name: stuckapps_pkey; Type: CONSTRAINT; Schema: public; Owner: lance; Tablespace: 
 --
 

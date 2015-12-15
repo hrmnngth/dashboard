@@ -201,7 +201,7 @@
 <hr/>
 <h3>Calls</h3>
 
-    <h4 align="center">Calls Received Past 24 Hours</h4>
+    <h4 align="center">Call Received Past 24 Hours</h4>
     <%=	line_chart [ 
 	{name: "calls", data: @calls.group(:interval).sum(:calls_received) }
         ], library: { colors: ["blue"]}, ytitle: "Total Calls"
