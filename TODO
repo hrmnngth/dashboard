@@ -1,8 +1,0 @@
-TODO:
-IAM Summary folder
-create a model
-rake it
-create a task to load csv data
-create a cron script to call the task
-create a graph for the data
-

@@ -16,3 +16,8 @@
 !/log/.keep
 /tmp
 /z_datafiles
+*~
+acclock.csv
+*.old
+test.sh
+
