@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+notice_template_name,notice_template_id,notices_triggered,esb_pickedup_count,esb_print_count
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,51,51,51
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,32,32,32
+2 - CUR_Request for Information,CNMEEN02,20,20,20
+10 - CUR_Total Ineligibility,CNIEEN10,11,11,11
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,9,9,9
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,7,7,7
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,7,7,7
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,7,7,7
+1A - CUR_Medicaid Eligibility,CNMEEN01A,5,5,5
+3A - CUR_Exchange+APTC Eligibility,CNIEEN03A,3,3,3
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,3,3,3
+19 - CUR_Request For Social Security Number,CNRSEN19,3,3,3
+9A - CUR_Individual Non IAP Eligibility,CNIESP09A,2,2,2
+102 - CUR_Confirmation of Receipt Notice_SPA,CNMRSP102,2,2,2
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,2,2,2
+20A - CUR_First Documenation Reminder Notice,CNRNSP20A,1,1,1
+30 - CUR_Medicaid Card Replacement Confirmation_SPA,CNMCSP30,1,1,1
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,1,1,1
+2 - CUR_Request for Information,CNMESP02,1,1,1
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEAM08D,1,1,1
+5A - CUR_Mixed Coverage Family,CNMFEN05A,1,1,1
+4A - CUR_Individual Temporary Eligibility,CNIESP04A,1,1,1
+3A - CUR_Exchange+APTC Eligibility,CNIESP03A,1,1,1
+=======
 notice_template_name,notice_template_id,notices_triggered,esb_pickedup_count,esb_print_count
 1A - CUR_Medicaid Eligibility,CNMEEN01A,83,83,83
 102 - CUR_Confirmation of Receipt Notice,CNMREN102,71,71,71
@@ -26,3 +52,4 @@ SR4 - CUR_DCHL Confirmation of Receipt Notice_SPA,CNMRSPSR4,1,1,1
 SR7 - CUR_SEP Approval,CNLEENSR7,1,1,1
 15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDSP15B1,1,1,1
 1A - CUR_Medicaid Eligibility,CNMEAM01A,1,1,1
+>>>>>>> 1fef4087336eaa88b9866bb94032b905ba934863

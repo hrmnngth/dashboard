@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 if [ -e ./Notices_Daily_Tracker* ]
 then
 	mv Notices_Daily_Tracker* new-ndt.csv

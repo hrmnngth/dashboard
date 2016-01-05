@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 if [ -e ./IAM_R* ]
 then
 	mv IAM_R* acclock.csv
@@ -8,5 +8,5 @@ then
 	sed -f acclock.sed <acclock.csv >acclock.tmp && mv acclock.tmp acclock.csv
 	rake import_acclock_csv:create_acclock
 else
-	echo "The new notices file is not here"
+	echo "The new IAM Summary file is not here"
 fi

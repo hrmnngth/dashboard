@@ -1,0 +1,35 @@
+template_name,template_id,communication_type,count
+102 - CUR_Confirmation of Receipt Notice,CNMREN102,Print,51
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Both,18
+2 - CUR_Request for Information,CNMEEN02,Both,15
+20A - CUR_First Documenation Reminder Notice,CNRNEN20A,Print,14
+10 - CUR_Total Ineligibility,CNIEEN10,Print,11
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Print,5
+2 - CUR_Request for Information,CNMEEN02,Print,5
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Both,5
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Both,5
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Print,4
+22 - CUR_Fourth Documentation Reminder Notice,CNRNEN22,Print,4
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Both,4
+4A - CUR_Individual Temporary Eligibility,CNIEEN04A,Both,3
+20B - CUR_Second  Documenation Reminder Notice,CNRNEN20B,Print,2
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,Print,2
+19 - CUR_Request For Social Security Number,CNRSEN19,Print,2
+102 - CUR_Confirmation of Receipt Notice_SPA,CNMRSP102,Print,2
+9A - CUR_Individual Non IAP Eligibility,CNIESP09A,Print,2
+3A - CUR_Exchange+APTC Eligibility,CNIEEN03A,Both,2
+21 - CUR_Third Documentation Reminder Notice,CNRNEN21,Both,2
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEEN08D,Print,1
+8A - CUR_Individual_Non-IAPEligibility,CNIEEN08A,Both,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Print,1
+3A - CUR_Exchange+APTC Eligibility,CNIESP03A,Print,1
+8D - CUR_Individual Temp Non-IAPEligibility,CNIEAM08D,Both,1
+15B1 - CUR_Medicaid Self Report Inconsistent with Data Match,CNRDEN15B1,Both,1
+1A - CUR_Medicaid Eligibility,CNMEEN01A,Print,1
+30 - CUR_Medicaid Card Replacement Confirmation_SPA,CNMCSP30,Print,1
+4A - CUR_Individual Temporary Eligibility,CNIESP04A,Print,1
+3A - CUR_Exchange+APTC Eligibility,CNIEEN03A,Print,1
+2 - CUR_Request for Information,CNMESP02,Both,1
+19 - CUR_Request For Social Security Number,CNRSEN19,Both,1
+5A - CUR_Mixed Coverage Family,CNMFEN05A,Print,1
+20A - CUR_First Documenation Reminder Notice,CNRNSP20A,Both,1
