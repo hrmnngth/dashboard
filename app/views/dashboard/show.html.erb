@@ -1,6 +1,6 @@
 <h3> Logins</h3>
 <p>&nbsp;</p>
-    <h4 align="center">Login Transactions with Reasons</h4>
+    <h4 align="center">Login Transactions with Status</h4>
     <%= column_chart [
 	{name: "Locked", data: @acclocks.where(app_transactions: "ACCOUNTS_LOCKED").group_by_day(:timestamp, format: '%d-%m-%y').sum(:user_login_counts) },
 	{name: "Sec Question", data: @acclocks.where(app_transactions: "SEC_QUEST_FAILED").group_by_day(:timestamp, format: '%d-%m-%y').sum(:user_login_counts) },
@@ -11,7 +11,7 @@
     %>
 
 <p>&nbsp;</p>
-    <h4 align="center">Login Transactions with Reasons</h4>
+    <h4 align="center">Login Transactions with Status</h4>
     <%=
 	pie_chart({"Locked" => @acclocks.where(app_transactions: "ACCOUNTS_LOCKED").sum(:user_login_counts),
 	           "Sec Question" => @acclocks.where(app_transactions: "SEC_QUEST_FAILED").sum(:user_login_counts),
