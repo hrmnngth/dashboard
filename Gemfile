@@ -30,6 +30,7 @@ gem 'groupdate', '2.5.0'
 gem 'active_median', '~> 0.1.0'
 gem 'rubyXL'
 gem 'nokogiri'
+gem 'minitest'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
