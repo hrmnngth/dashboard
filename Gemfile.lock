@@ -159,6 +159,7 @@ DEPENDENCIES
   groupdate (= 2.5.0)
   jbuilder (~> 2.0)
   jquery-rails
+  minitest
   nokogiri
   pg
   rails (= 4.2.4)
@@ -169,3 +170,6 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.10.6
