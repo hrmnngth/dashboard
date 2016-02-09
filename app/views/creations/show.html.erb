@@ -1,0 +1,27 @@
+<div class="row">
+
+  <!-- Line Chart - Single Series -->
+  <div class="col-xs-6">
+    <h3>Creations By Day</h3>
+    <%= column_chart @accts.group_by_day(:creation_date_time, format: "%d %m, %Y").count, discrete: true, id: "users-chart"	 %>
+	<!-- Next, try to group by something else, for example user_type -->
+
+
+    <%= line_chart [
+  	{name: "Creation", data: @accts.group_by_day(:creation_date_time, format: "%m/%d/%Y %h:%m").count},
+  	{name: "Creation2", data: @accts.group_by_day(:creation_date_time, format: "%m/%d/%Y %h:%m").count}
+	] 
+    %>
+  </div>
+
+</div>
+
+
+
+
+<% result = @accts
+   puts result.class.name 
+  
+
+%>
+

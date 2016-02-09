@@ -1,0 +1,51 @@
+<div class="row">
+
+  <!-- Line Chart - Single Series -->
+
+  <div class="col-xs-6">
+    <h4>Call Received Past 24 Hours</h4>
+    <%= column_chart [{name:"total", data: @calls.group(:interval).sum(:calls_received) }], xtitle: "Time", ytitle: "Calls" %>
+
+    <h4>Received, Answered and Abandoned Calls Over the Past 24 Hours</h4>
+    <%= column_chart [
+	{name: "received", data: @calls.group(:interval).sum(:calls_received) },
+	{name: "answered", data: @calls.group(:interval).sum(:return_no_answer) },
+	{name: "abandoned", data: @calls.group(:interval).sum(:abandoned_calls) }
+	], xtitle: "Time", ytitle: "Calls", stacked: true
+    %>
+
+    <h4>Received, Answered and Abandoned Calls Over the Past 24 Hours</h4>
+    <%= line_chart [
+	{name: "received", data: @calls.group(:interval).sum(:calls_received) },
+	{name: "answered", data: @calls.group(:interval).sum(:calls_answered) },
+	{name: "no-answer", data: @calls.group(:interval).sum(:return_no_answer) },
+	{name: "abandoned", data: @calls.group(:interval).sum(:abandoned_calls) }
+	], xtitle: "Time", ytitle: "Calls"
+    %>
+
+
+    <h4>Total Received, Answered and Abandoned Calls Past 24 Hours</h4>
+    <%= column_chart [
+	{name: "received", data: @calls.group_by_day(:interval).sum(:calls_received) },
+	{name: "answered", data: @calls.group_by_day(:interval).sum(:calls_answered) },
+	{name: "no-answer", data: @calls.group_by_day(:interval).sum(:return_no_answer) },
+	{name: "abandoned", data: @calls.group_by_day(:interval).sum(:abandoned_calls) }
+	], xtitle: "Call Result", ytitle: "Calls"
+    %>
+
+
+    <h4>Breakdown of Received, Abandoned and No-Answer Calls Over the Past 24 Hours</h4>
+
+    <%= pie_chart({"received" => @calls.sum(:calls_received), 
+	           "abandoned" => @calls.sum(:abandoned_calls), 
+		   "no-answer" => @calls.sum(:return_no_answer) })  %>
+
+
+  </div>
+
+
+
+
+
+
+</div>

@@ -1,0 +1,355 @@
+<h3>Logins</h3>
+<p>&nbsp;</p>
+<h4 align="center">Login Transactions with Status</h4>
+<%= column_chart [
+	{name: "Locked", data: @acclocks.where(app_transactions: "ACCOUNTS_LOCKED").
+    group_by_day(:timestamp, format: '%d-%m-%y').sum(:user_login_counts) },
+	{name: "Sec Question", data: @acclocks.where(app_transactions: "SEC_QUEST_FAILED").
+    group_by_day(:timestamp, format: '%d-%m-%y').sum(:user_login_counts) },
+	{name: "Wrong Password", data: @acclocks.where(app_transactions: "WRONG_PASSWORD").
+    group_by_day(:timestamp, format: '%d-%m-%y').sum(:user_login_counts) },
+	{name: "Successful", data: @acclocks.where(app_transactions: "SUCCESSFULL_LOGINS").
+    group_by_day(:timestamp, format: '%d-%m-%y').sum(:user_login_counts) } ],
+	library: { colors: ["red", "orange", "yellow", "green"]},
+	stacked:true, discrete:true, ytitle: "Total Logins"
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">Login Transactions with Status</h4>
+<%=	pie_chart({"Locked" => @acclocks.where(app_transactions: "ACCOUNTS_LOCKED").sum(:user_login_counts),
+	           "Sec Question" => @acclocks.where(app_transactions: "SEC_QUEST_FAILED").sum(:user_login_counts),
+		         "Wrong Password" => @acclocks.where(app_transactions: "WRONG_PASSWORD").sum(:user_login_counts),
+		         "Success" => @acclocks.where(app_transactions: "SUCCESSFULL_LOGINS").sum(:user_login_counts) },
+		         library: { colors: ["red", "orange", "yellow", "green"]} )
+%>
+
+<p>&nbsp;</p>
+
+<hr>
+<h3>Notices</h3>
+
+<h4 align="center">Notice Counts By Day and Communication Type</h4>
+<%= column_chart [
+  { name: "Print", data: @notices.where(communication_type: "Print").group_by_day(:created_at).sum(:count) },
+  { name: "Email", data: @notices.where(communication_type: "Email").group_by_day(:created_at).sum(:count) },
+  { name: "Both",  data: @notices.where(communication_type: "Both") .group_by_day(:created_at).sum(:count) } ],
+  library: { curveType: "null", colors: ["blue", "green", "orange"]}, stacked:true, discrete:true, ytitle: "Total Count"
+
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">Notice Counts By Communcation Type</h4>
+<%= pie_chart @notices.group(:communication_type).sum(:count),
+      library: { curveType: "null", colors: ["orange", "blue", "green"]}
+%>
+
+<p>&nbsp;</p>
+<h4 align="center">Notice Counts By Template Id</h4>
+<%= column_chart [ { name: "Notices", data: @notices.order(:template_id).group(:template_id).sum(:count) } ],
+		library: { curveType: "null"}, colors: ["blue"],
+		discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<!-- Commenting out this graph
+<h4 align="center">Notice Counts By Day and Communication Type</h4>
+<%= column_chart [
+	{ name: "Print", data: @notices.where(communication_type: "Print").group_by_day(:created_at).sum(:count) },
+	{ name: "Email", data: @notices.where(communication_type: "Email").group_by_day(:created_at).sum(:count) },
+	{ name: "Both",  data: @notices.where(communication_type: "Both") .group_by_day(:created_at).sum(:count) } ],
+	library: { curveType: "null", colors: ["blue", "green", "orange"]}, discrete:true, ytitle: "Total Count"
+
+%>
+
+<p>&nbsp;</p>
+-->
+
+<hr/>
+<h3>The following data is from the "Notices_Daily_Tracker" reports</h3>
+
+<h4 align="center">Total Notices Received, Triggered and Printed by Template ID</h4>
+<%= column_chart [
+	{ name: "Triggered", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:notices_triggered) },
+	{ name: "Picked Up", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:esb_pickedup_count) },
+	{ name: "Printed", data: @noticestats.order(:notice_template_id).group(:notice_template_id).sum(:esb_print_count) } ],
+		library: { curveType: "null"}, colors: ["purple", "blue", "green"],
+		discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">Total Notices Received, Triggered and Printed by Day</h4>
+<%= column_chart [
+	{ name: "Triggered", data: @noticestats.group_by_day(:created_at).sum(:notices_triggered) },
+	{ name: "Picked Up", data: @noticestats.group_by_day(:created_at).sum(:esb_pickedup_count) },
+	{ name: "Printed", data: @noticestats.group_by_day(:created_at).sum(:esb_print_count) } ],
+		library: { colors: ["purple", "blue", "green"]},
+		discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<hr/>
+<h3>Account Creation</h3>
+
+<h4 align="center">Creations By Day</h4>
+<%=
+	column_chart [ {name: "Acct Creation", data: @accts.group_by_day(:creation_date_time, format: "%m-%d-%Y").count } ],
+		library: {  curveType: "null"}, colors: ["blue"],
+		discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">Creations By Day and User Type</h4>
+<%=	column_chart [
+	{name: "consumer", data: @accts.where(user_type: "consumer").group_by_day(:creation_date_time, format: "%m-%d-%Y").count },
+	{name: "assister", data: @accts.where(user_type: "assister").group_by_day(:creation_date_time, format: "%m-%d-%Y").count },
+	{name: "broker", data: @accts.where(user_type: "broker").group_by_day(:creation_date_time, format: "%m-%d-%Y").count },
+	{name: "employer", data: @accts.where(user_type: "employer").group_by_day(:creation_date_time, format: "%m-%d-%Y").count },
+	{name: "employee", data: @accts.where(user_type: "employee").group_by_day(:creation_date_time, format: "%m-%d-%Y").count }  ],
+	library: {hAxis: {title: "Day"}, colors: ["blue", "yellow", "orange", "green", "purple"]},
+	stacked:true, discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">Account Creation by User Type</h4>
+
+<%=	pie_chart @accts.group(:user_type).count,
+      library: { colors: ["blue", "yellow", "orange", "white", "purple", "green"]}
+%>
+
+<p>&nbsp;</p>
+
+<hr/>
+<h3>Logins</h3>
+
+<h4 align="center">Login Success v. Failure Transaction Times</h4>
+<%= column_chart [
+	{name: "success", data: @loginfailures.where(result: "Success").group_by_day(:timestamp, format: '%d-%m-%y').average(:avgtime) },
+	{name: "failure", data: @loginfailures.where(result: "Failure").group_by_day(:timestamp, format: '%d-%m-%y').average(:avgtime) } ],
+	library: { colors: ["green", "red"]},
+	stacked:false, discrete:true, ytitle: "Avg. Time \n(sec)"
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">Login Transactions</h4>
+<%= column_chart [
+	{name: "success", data: @loginfailures.where(result: "Success").group_by_day(:timestamp, format: '%d-%m-%y').count },
+	{name: "failure", data: @loginfailures.where(result: "Failure").group_by_day(:timestamp, format: '%d-%m-%y').count } ],
+	library: { colors: ["green", "red"]},
+	stacked:true, discrete:true, ytitle: "Total Logins"
+%>
+
+<p>&nbsp;</p>
+
+<hr/>
+<h3>Malformed Notices</h3>
+<h4 align="center">Successful and Malformed Notices</h4>
+<%=
+	book = Creek::Book.new "data-pdc.xlsx"
+	sheet = book.sheets[0]
+	successful = Hash.new
+	malformed = Hash.new
+	label = ""
+	hAxisTitle1 = ""
+	vAxisTitle1 = ""
+	hAxisTitle2 = ""
+	vAxisTitle2 = ""
+
+	firstRow = true
+
+	curdate = ""
+	sheet.rows.each do |row|
+		columna = true
+		columnb = false
+		columnc = false
+
+		row.each do |key,value|
+			if firstRow == true && columna == true
+				label=value
+				columna=false
+				columnb=true
+
+			elsif firstRow == true && columnb == true
+				hAxisTitle1 = label
+				vAxisTitle1 = value
+				columnb=false
+				columnc=true
+			elsif firstRow == true && columnc == true
+				hAxisTitle2 = label
+				vAxisTitle2 = value
+				firstRow=false
+
+			elsif firstRow != true && columna == true
+				label=value
+				columna=false
+				columnb=true
+
+			elsif firstRow!=true && columnb == true
+				successful.store(label,value)
+				columnb=false
+				columnc=true
+			else firstRow!=true && columnc == true
+				malformed.store(label,value) #need to know which column
+			end
+		end
+	end
+
+	array_successful = successful.to_a
+	array_malformed = malformed.to_a
+
+	line_chart [
+		{name: "Successful", data: array_successful },
+		{name: "Malformed", data: array_malformed}],
+		library: {hAxis: {title: "Day"}, curveType: "function", colors: ["green", "red"]},
+		discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<hr>
+<h3>Calls</h3>
+
+<h4 align="center">Calls Received Past 24 Hours</h4>
+<%=	line_chart [
+	{name: "calls", data: @calls.group(:interval).sum(:calls_received) }
+        ], library: { colors: ["blue"]}, ytitle: "Total Calls"
+%>
+
+<!-- Commenting out this graph:
+    <h4 align="center">Received, Answered and Abandoned Calls Over the Past 24 Hours</h4>
+    <%= column_chart [
+	{name: "received", data: @calls.group(	:interval).sum(:calls_received) },
+	{name: "answered", data: @calls.group(:interval).sum(:return_no_answer) },
+	{name: "abandoned", data: @calls.group(:interval).sum(:abandoned_calls) }
+	], library: { colors: ["blue", "green", "orange", "red"]}, ytitle: "Total Calls", stacked: true
+    %>
+-->
+
+<p>&nbsp;</p>
+
+<h4 align="center">Received, Answered and Abandoned Calls Over the Past 24 Hours</h4>
+<%= line_chart [
+	{name: "received", data: @calls.group(:interval).sum(:calls_received) },
+	{name: "answered", data: @calls.group(:interval).sum(:calls_answered) },
+	{name: "no-answer", data: @calls.group(:interval).sum(:return_no_answer) },
+	{name: "abandoned", data: @calls.group(:interval).sum(:abandoned_calls) }
+	], library: { colors: ["blue", "green", "orange", "red"]}, ytitle: "Total Calls"
+%>
+
+<!-- Commenting out this next graph
+    <h4 align="center">Total Received, Answered and Abandoned Calls Past 24 Hours</h4>
+    <%= column_chart [
+	{name: "received", data: @calls.group_by_day(:interval).sum(:calls_received) },
+	{name: "answered", data: @calls.group_by_day(:interval).sum(:calls_answered) },
+	{name: "no-answer", data: @calls.group_by_day(:interval).sum(:return_no_answer) },
+	{name: "abandoned", data: @calls.group_by_day(:interval).sum(:abandoned_calls) }
+	], xtitle: "Call Result", ytitle: "Calls"
+    %>
+-->
+
+<p>&nbsp;</p>
+
+<h4 align="center">Breakdown of Received, Abandoned and No-Answer Calls Over the Past 24 Hours</h4>
+
+<%= pie_chart({"answered" => @calls.sum(:calls_answered),
+	             "abandoned" => @calls.sum(:abandoned_calls),
+		           "no-answer" => @calls.sum(:return_no_answer) },
+               library: { colors: ["blue", "orange", "red"]} )
+%>
+
+<p>&nbsp;</p>
+
+<hr />
+<h3>Applications</h3>
+<h4 align="center">Stuck Apps</h4>
+<%= column_chart [
+	{ name: "Missing", data: @stuckapps.group_by_day(:created_at).sum(:missing) },
+	{ name: "In Edit", data: @stuckapps.group_by_day(:created_at).sum(:inedit) },
+	{ name: "Admin Queue", data: @stuckapps.group_by_day(:created_at).sum(:admin) },
+	{ name: "Missing Evidence", data: @stuckapps.group_by_day(:created_at).sum(:noevidence) },
+	{ name: "Successful",  data: @stuckapps.group_by_day(:created_at).sum(:successful) } ],
+	library: { curveType: "function", colors: ["red", "blue", "chartreuse", "orange", "green"]},  stacked:true, discrete:true, ytitle: "Total Count"
+
+%>
+<p>&nbsp;</p>
+
+<h4 align="center">Breakdown of Applications</h4>
+
+<%= pie_chart ({"Missing" => @stuckapps.sum(:missing),
+	           "In Edit" => @stuckapps.sum(:inedit),
+	           "Admin Q" => @stuckapps.sum(:admin),
+	           "No Evid." => @stuckapps.sum(:noevidence),
+ 	           "Successful" => @stuckapps.sum(:successful) }), library: { colors: ["red", "blue", "chartreuse", "orange", "green"]}
+%>
+
+<hr/>
+
+<h3>CSLs</h3>
+
+<h4 align="center">O&M Ticket Data</h4>
+<%= column_chart [
+	{ name: "O&M Critical", data: @tickets.where(type: "O&M").group_by_day(:created_at).sum(:critical) },
+	{ name: "O&M High", data: @tickets.where(type: "O&M").group_by_day(:created_at).sum(:high) },
+	{ name: "O&M Medium", data: @tickets.where(type: "O&M").group_by_day(:created_at).sum(:medium) },
+	{ name: "O&M Low", data: @tickets.where(type: "O&M").group_by_day(:created_at).sum(:low) }],
+	library: { curveType: "function", colors: ["red", "orange", "yellow", "green"]},
+	stacked:true, discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">O&M Ticket Data</h4>
+
+<%= pie_chart ({"Critical" => @tickets.where(type: "O&M").sum(:critical),
+	            "High" => @tickets.where(type: "O&M").sum(:high),
+	            "Medium" => @tickets.where(type: "O&M").sum(:medium),
+	    	    "Low" => @tickets.where(type: "O&M").sum(:low) }), library: { colors: ["red", "orange", "yellow", "green"]}
+%>
+
+<h4 align="center">Tickets Assigned to Queue</h4>
+<%= column_chart [
+	{ name: "Other Critical", data: @tickets.where(type: "Other").group_by_day(:created_at).sum(:critical) },
+	{ name: "Other High", data: @tickets.where(type: "Other").group_by_day(:created_at).sum(:high) },
+	{ name: "Other Medium", data: @tickets.where(type: "Other").group_by_day(:created_at).sum(:medium) },
+	{ name: "Other Low", data: @tickets.where(type: "Other").group_by_day(:created_at).sum(:low) }],
+	library: { curveType: "function", colors: ["red", "orange", "yellow", "green"]},
+	stacked:true, discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+<h4 align="center">In Queue Ticket Data</h4>
+
+<%= pie_chart ({"Critical" => @tickets.where(type: "Other").sum(:critical),
+	              "High" => @tickets.where(type: "Other").sum(:high),
+	              "Medium" => @tickets.where(type: "Other").sum(:medium),
+	    	        "Low" => @tickets.where(type: "Other").sum(:low) }),
+                library: { colors: ["red", "orange", "yellow", "green"]}
+%>
+
+<h4 align="center">DHS Ticket Data</h4>
+<%= column_chart [
+	{ name: "DHS Critical", data: @tickets.where(type: "DHS").group_by_day(:created_at).sum(:critical) },
+	{ name: "DHS High", data: @tickets.where(type: "DHS").group_by_day(:created_at).sum(:high) },
+	{ name: "DHS Medium", data: @tickets.where(type: "DHS").group_by_day(:created_at).sum(:medium) },
+	{ name: "DHS Low", data: @tickets.where(type: "DHS").group_by_day(:created_at).sum(:low) } ],
+	library: { curveType: "function", colors: ["red", "orange", "yellow", "green"]},
+	stacked:true, discrete:true, ytitle: "Total Count"
+%>
+
+<p>&nbsp;</p>
+
+<h4 align="center">DHS/DHCF Ticket Data</h4>
+
+<%= pie_chart ({"Critical" => @tickets.where(type: "DHS").sum(:critical),
+	              "High" => @tickets.where(type: "DHS").sum(:high),
+	              "Medium" => @tickets.where(type: "DHS").sum(:medium),
+	    	        "Low" => @tickets.where(type: "DHS").sum(:low) }),
+                library: { colors: ["red", "orange", "yellow", "green"]}
+%>
