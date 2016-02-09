@@ -1,0 +1,24 @@
+Tue, 09 Feb 2016 13:17:21 +0000
+README.rdoc	Wed, 09 Dec 2015 20:45:57 +0000
+app/controllers/application_controller.rb	Sat, 07 Nov 2015 02:26:02 +0000
+app/controllers/calls_controller.rb	Fri, 13 Nov 2015 18:21:33 +0000
+app/controllers/creations_controller.rb	Thu, 12 Nov 2015 15:42:46 +0000
+app/controllers/dashboard_controller.rb	Thu, 10 Dec 2015 05:11:02 +0000
+app/controllers/database_clean_controller.rb	Mon, 09 Nov 2015 05:03:50 +0000
+app/controllers/nokoexample_controller.rb	Wed, 09 Dec 2015 14:09:23 +0000
+app/controllers/notices_controller.rb	Thu, 12 Nov 2015 16:26:41 +0000
+app/helpers/application_helper.rb	Sat, 07 Nov 2015 02:26:02 +0000
+app/helpers/calls_helper.rb	Fri, 13 Nov 2015 18:20:48 +0000
+app/helpers/creations_helper.rb	Wed, 11 Nov 2015 19:25:39 +0000
+app/helpers/dashboard_helper.rb	Mon, 16 Nov 2015 18:00:34 +0000
+app/helpers/database_clean_helper.rb	Fri, 04 Dec 2015 16:17:45 +0000
+app/helpers/nokoexample_helper.rb	Wed, 09 Dec 2015 14:09:23 +0000
+app/helpers/notices_helper.rb	Thu, 12 Nov 2015 16:24:26 +0000
+app/models/acclock.rb	Wed, 09 Dec 2015 16:39:18 +0000
+app/models/acct.rb	Wed, 11 Nov 2015 19:44:30 +0000
+app/models/call.rb	Fri, 13 Nov 2015 18:17:13 +0000
+app/models/loginfailure.rb	Tue, 17 Nov 2015 20:44:11 +0000
+app/models/notice.rb	Thu, 12 Nov 2015 16:15:59 +0000
+app/models/noticestat.rb	Sun, 13 Dec 2015 14:48:01 +0000
+app/models/stuckapp.rb	Sun, 06 Dec 2015 05:35:30 +0000
+app/models/ticket.rb	Tue, 08 Dec 2015 16:59:01 +0000
